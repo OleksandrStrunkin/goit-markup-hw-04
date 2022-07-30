@@ -26,9 +26,9 @@
         >
         <nav class="nav">
           <ul class="nav-list list">
-            <li><a href="./index.html" class="link">Студія</a></li>
+            <li><a href="./index.html" class="link current">Студія</a></li>
             <li>
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+              <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
             <li><a href="#" class="link">Контакти</a></li>
           </ul>
@@ -36,11 +36,15 @@
         <ul class="contacts list">
           <li>
             <a href="mailto:info@devstudio.com" class="contacts-link link"
+              ><svg class="phone-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
             <a href="tel:+380961111111" class="tel-link link"
+              ><svg class="mail-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -67,7 +71,7 @@
             </li>
           </ul>
           <ul class="list portfolio-list">
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/laptop.jpg"
@@ -80,7 +84,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/two-players.jpg"
@@ -96,7 +100,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/seafood.jpg"
@@ -109,7 +113,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/headphone.jpg"
@@ -122,7 +126,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/boxes.jpg"
@@ -135,7 +139,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/inspiration.jpg"
@@ -148,7 +152,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/limiteded.jpg"
@@ -161,7 +165,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/lab.jpg"
@@ -174,7 +178,7 @@
                 </div></a
               >
             </li>
-            <li>
+            <li class="portfolio-item">
               <a class="link" href="#">
                 <img
                   src="./images/portfolio/growingb.jpg"
@@ -192,37 +196,71 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo logo-footer"
-          ><span class="logo-decoration">Web</span
-          ><span class="logo-footer-tw">Studio</span></a
-        >
-        <address>
-          <ul class="contacts-list-footer list">
-            <li>
-              <a
-                href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                target="_blank"
-                class="contacts-adress link link-footer"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container cont-footer">
+        <!-- first-block -->
+        <div>
+          <a href="./index.html" class="logo logo-footer"
+            ><span class="logo-decoration">Web</span
+            ><span class="logo-footer-tw">Studio</span></a
+          >
+          <address class="footer-address">
+            <ul class="contacts-list-footer list">
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  class="contacts-adress link link-footer"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-footer link link-footer"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+380961111111"
+                  class="contacts-footer link link-footer"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- second block -->
+        <div class="footer-block-soc">
+          <h2 class="footer-title">Приєднуйтесь</h2>
+          <ul class="footer-soc">
+            <li class="footer-item">
+              <a href="" class="footer-soc-item">
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="contacts-footer link link-footer"
-                >info@devstudio.com</a
-              >
+            <li class="footer-item">
+              <a href="" class="footer-soc-item">
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li>
-              <a
-                href="tel:+380961111111"
-                class="contacts-footer link link-footer"
-                >+38 096 111 11 11</a
-              >
+            <li class="footer-item">
+              <a href="" class="footer-soc-item">
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-soc-item">
+                <svg class="footer-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
